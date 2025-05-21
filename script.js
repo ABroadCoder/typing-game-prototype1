@@ -61,6 +61,7 @@ type4.volume = 0.5;
 type5.volume = 0.5;
 type6.volume = 0.5;
 victorySound.volume = 0.1;
+victorySound2.volume = 0.1;
 
 // Variable Initializations
 
