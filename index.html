@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="safari_hat.ico" type="x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
+    <title>Typing Game! (26 hours)</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="popup-container welcome-popup hidden">
+      <div class="close-popup-container hidden">X</div>
+      <div class="popup-text-container">
+        Welcome to the game.<br />What is your name?
+      </div>
+      <input
+        type="text"
+        class="name-input-field cursor-transparent"
+        value="Just start typing..."
+      />
+      <button class="submit-button">Submit</button>
+    </div>
+    <div class="popup-container out-of-time-popup hidden">
+      <div class="close-popup-container hidden">X</div>
+      <div class="popup-text-container">
+        You're out of time.<br />Click the button to retry.
+      </div>
+      <input
+        type="text"
+        class="name-input-field hidden"
+        value="Type your name here"
+      />
+      <button class="retry-button">Retry</button>
+    </div>
+    <div class="popup-container level-complete-popup hidden">
+      <div class="close-popup-container hidden">X</div>
+      <div class="popup-text-container">
+        Congratulations! You've beaten the level.
+      </div>
+      <button class="continue-button">Continue</button>
+    </div>
+    <header class="top-container">
+      <div class="player-overall-container">
+        <div class="player-name-container"></div>
+        <div class="player-level-container"></div>
+      </div>
+      <img class="parchment" src="parchment_banner1.png" />
+    </header>
+    <div class="main-container">
+      <div class="main-left-container">
+        <div class="timer-overall-container">
+          <div class="timer-container"></div>
+          <div class="timer-title-container">Time</div>
+        </div>
+      </div>
+      <div class="main-center-container"></div>
+      <div class="main-right-container">
+        <div class="score-overall-container">
+          <div class="score-title-container">Points</div>
+          <div class="score-container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script defer src="script.js"></script>
+</html>
