@@ -155,21 +155,22 @@ body {
 
 .top-container {
   padding: 0;
-  width: 100%;
-  height: 40%;
+  width: 100vw;
+  height: 40vh;
   font-size: 5vw;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   order: 1;
 }
 
 .parchment {
   margin: 0;
   padding: 0;
-  height: 100%;
-  object-fit: cover;
+  width: 60vw;
+  height: 55vh;
+  object-fit: contain;
   order: 2;
   opacity: 0.7;
 }
@@ -181,9 +182,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex;
-  width: 35%;
-  height: auto;
+  width: 40vmin;
+  height: 20vmin;
   box-shadow: 0 0 10px 5px rgba(37, 25, 5, 0.876);
+  object-fit: contain;
 }
 
 .timer-title-container {
@@ -194,7 +196,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: cursive, Arial, Helvetica;
-  font-size: 4vw;
+  font-size: 7vmin;
   order: 1;
 }
 
@@ -203,7 +205,7 @@ body {
   height: auto;
   background-color: rgba(224, 207, 156, 0.248);
   font-family: Rosarivo, Arial, Helvetica;
-  font-size: 4vw;
+  font-size: 7vmin;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,9 +219,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex;
-  width: 35%;
-  height: auto;
+  width: 40vmin;
+  height: 20vmin;
   box-shadow: 0 0 10px 5px rgba(37, 25, 5, 0.876);
+  object-fit: contain;
 }
 
 .score-title-container {
@@ -229,7 +232,7 @@ body {
   width: 100%;
   height: auto;
   font-family: cursive;
-  font-size: 4vw;
+  font-size: 7vmin;
   background-color: rgb(220, 179, 15);
   justify-content: center;
   align-content: center;
@@ -242,7 +245,7 @@ body {
   height: auto;
   justify-content: center;
   align-content: center;
-  font-size: 4vw;
+  font-size: 7vmin;
   font-family: Rosarivo, Tahoma;
   font-weight: 700;
   background-color: rgba(224, 207, 156, 0.248);
@@ -306,6 +309,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   width: 20vw;
   height: 100%;
   order: 2;
@@ -327,18 +331,19 @@ body {
 }
 
 .text-box {
-  width: 20vw;
-  height: 20vw;
+  width: 28vmin;
+  height: 28vmin;
   border: black;
   /* background-image: url('wood_background.jpg'); */
   background-color: rgba(156, 113, 56, 0.94);
   box-shadow: 0 0 10px 5px rgba(37, 25, 5, 0.876);
-  font-size: 11vw;
+  font-size: 18vmin;
   font-family: Rosarivo, Helvetica, sans-serif;
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: contain;
 }
 
 .player-overall-container {
@@ -346,11 +351,14 @@ body {
   padding: 2vw;
   text-align: left;
   width: 25vw;
-  height: 100%;
+  height: auto;
   color: rgb(241, 241, 200);
   /* background-color: #dddac64b; */
   font-size: 2vw;
   font-family: Rosarivo, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   order: 1;
